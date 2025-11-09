@@ -9,8 +9,8 @@ demo_videos/ – for input and output demo clips
 docs/ – for weekly reports and documentation
 requirements.txt – listing all necessary dependencies
 
-I also made a requirements.txt file to list all the tools I'm using.
-Tools and Environment Setup: I have prepared my development environment, utilizing Google Colab. All necessary Python libraries, including OpenCV for video frame manipulation, FFmpeg for frame extraction and re-encoding, and scikit-image for quality assessment, have been successfully installed and verified. GPU acceleration has also been confirmed for AI-related processing.
+I also created a requirements.txt file listing all the tools I'm using.
+Tools and Environment Setup: I have set up my development environment using Google Colab. All necessary Python libraries, including OpenCV for video frame manipulation, FFmpeg for frame extraction and re-encoding, and scikit-image for quality assessment, have been successfully installed and verified. GPU acceleration has also been confirmed for AI-related processing.
 
 Baseline Implementation: I have developed a foundational video upscaling pipeline. This initial version employs a non-AI-based bicubic interpolation method.
 
