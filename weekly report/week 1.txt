@@ -1,0 +1,27 @@
+
+Here's my update for Week 1.
+This week, my main goal was to get my Video Super-Resolution project set up. I just focused on building the base and making sure everything works.
+What I Did
+Made the GitHub Folder: I started a new GitHub repo. I made a few folders to keep everything neat:
+notebooks/ – for weekly experiment notebooks
+src/ – for main Python scripts and helper functions
+demo_videos/ – for input and output demo clips
+docs/ – for weekly reports and documentation
+requirements.txt – listing all necessary dependencies
+
+I also made a requirements.txt file to list all the tools I'm using.
+Tools and Environment Setup: I have prepared my development environment, utilizing Google Colab. All necessary Python libraries, including OpenCV for video frame manipulation, FFmpeg for frame extraction and re-encoding, and scikit-image for quality assessment, have been successfully installed and verified. GPU acceleration has also been confirmed for AI-related processing.
+
+Baseline Implementation: I have developed a foundational video upscaling pipeline. This initial version employs a non-AI-based bicubic interpolation method.
+
+The process involves the following steps:
+
+1. Decomposition of a low-resolution video into individual frames.
+2. Upscaling of each frame using OpenCV's bicubic interpolation.
+3. Recomposition of the upscaled frames into a new video file.
+
+Results: The baseline implementation has been successfully executed. A test video was processed, and the output, "sample_upscaled.mp4," was generated, confirming the end-to-end functionality of the pipeline. Thoughts
+Week 1 was just about getting the setup right, not about getting amazing results. Now that I have this simple version working, it will be easy to add the real AI models.
+Next Week
+For Week 2, I'm going to add a real AI model, probably Real-ESRGAN. Then I'll compare the AI video to the simple one I made this week.
+
