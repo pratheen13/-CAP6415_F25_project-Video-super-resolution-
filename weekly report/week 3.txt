@@ -1,6 +1,7 @@
 Week 3: Deep Learning Integration
 
-Here's my update for Week 3. This week, my main goal was to integrate the Real-ESRGAN deep learning model. I moved from simple mathematical resizing to actual AI inference to see if I could hit 8K resolution.
+Here's my update for Week 3. This week, my main goal was to integrate the Real-ESRGAN deep learning model.
+I moved from simple mathematical resizing to actual AI inference to see if I could hit 8K resolution.
 
 What I Did
 
