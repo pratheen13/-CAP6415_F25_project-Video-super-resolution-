@@ -8,3 +8,6 @@ lpips
 Pillow
 matplotlib
 numpy
+huggingface-hub==0.13.4
+torch>=1.7
+torchvision>=0.8.0
