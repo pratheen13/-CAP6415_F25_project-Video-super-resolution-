@@ -1,0 +1,27 @@
+Week 3: Deep Learning Integration
+
+Here's my update for Week 3. This week, my main goal was to integrate the Real-ESRGAN deep learning model. I moved from simple mathematical resizing to actual AI inference to see if I could hit 8K resolution.
+
+What I Did
+
+Model Setup: I installed the Real-ESRGAN library and loaded the pre-trained x4 weights.
+
+High-Res Testing: I pushed the system hard by attempting to upscale a 1920x1080 (1080p) video by 4x, aiming for 7680x4320 (8K) output.
+
+GPU Acceleration: I configured the script to use cuda (NVIDIA GPU). Even with the GPU, the computational load for generating 8K frames is massive.
+
+Execution: I ran a short test clip (1.8 seconds, 54 frames) to benchmark the performance.
+
+Results The pipeline was successful but extremely computationally expensive.
+
+Resolution: Successfully upscaled from 1080p to 8K (7680x4320).
+
+Time: It took 10 minutes and 50 seconds to process just 1.8 seconds of video.
+
+Speed: The average speed was 0.08 FPS (approx. 12 seconds per frame).
+
+Storage: The file size grew from 3.2 MB to 11.3 MB.
+
+Thoughts The visual quality at 8K is incredible, but the performance hit is severe. Running at 0.08 FPS means this is strictly for offline rendering, not real-time use. I learned that upscaling from an already high resolution (1080p) to 8K requires significantly more VRAM and time than upscaling from 480p to 1080p.
+
+Next Week For Week 4, I need to validate if this extreme processing time is worth it. I will build a metrics tool to calculate PSNR and SSIM scores to see how much quality I am actually gaining for all this compute power.
