@@ -1,0 +1,19 @@
+Week 5: Final Comparison and Demo
+
+Here's my update for Week 5. This week, my main goal was to finalize the project. I conducted a final A/B test and recorded the demonstration video to show off the results.
+
+What I Did
+
+Final A/B Test: I updated my analysis tool to compare three things at once: The Reference Video, the Week 2 Baseline (Lanczos), and the Week 3 AI Model. This gave me a direct comparison table.
+
+Demo Recording: I recorded a screen capture of the entire project. I showed:
+
+The code running on Google Colab (showing the GPU usage).
+
+The real-time metric calculation.
+
+A side-by-side video playback showing the "blur vs. sharp" difference.
+
+Documentation: I finalized the README.md and organized the repo so anyone can download and run it.
+
+Results The final data showed that the AI model improved the signal quality by over +4 dB compared to the baseline and reduced the perceptual error by nearly 75%. The project is now fully complete and documented.
