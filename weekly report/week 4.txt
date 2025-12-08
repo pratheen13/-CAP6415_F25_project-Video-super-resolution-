@@ -1,0 +1,23 @@
+Week 4: Testing and Metrics
+
+Here's my update for Week 4. This week, my main goal was to validate my results. Visuals are subjective, so I built a "Comparison Tool" to generate hard numbers that proves the AI model is superior.
+
+What I Did
+
+Analysis Script: I created a new script called analysis.py. It takes two videos (original and upscaled), syncs them, and compares them with frame-by-frame.
+
+Implemented Metrics: I wrote code to calculate three specific scores:
+
+PSNR: Checks pixel accuracy.
+
+SSIM: Checks if the structure/shapes are preserved.
+
+LPIPS: A "perceptual" metric that uses a neural network to judge how the image looks to a human eye.
+
+Visualizations: I used Matplotlib to generate "Difference Maps"—heatmaps that show exactly which pixels the AI changed compared to the original.
+
+Results The numbers confirmed my hypothesis. The Real-ESRGAN model achieved a PSNR of 35.71 dB (which is considered excellent) and a very low LPIPS score of 0.06, meaning it looks very natural.
+
+Traditional metrics like PSNR sometimes penalize AI because it "hallucinates" details, but LPIPS confirms that those hallucinations actually look good to humans.
+
+Next Week For Week 5, I will wrap everything up. I'll do a final 3-way comparison (Original vs. Lanczos vs. AI) and record the final demo video for submission.
