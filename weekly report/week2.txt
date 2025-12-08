@@ -1,0 +1,19 @@
+Here's my update for Week 2. This week, my main goal was to make the code more professional and implement a stronger baseline method called Lanczos to compare against later.
+
+What I Did
+
+Refactoring Code: I moved away from the simple script I wrote in Week 1. I organized the code into classes:
+
+Config: To handle settings like file paths and scale factors.
+
+VideoUpscaler: To handle the heavy lifting of processing frames.
+
+Lanczos Implementation: I integrated Lanczos interpolation. Since OpenCV doesn't handle this perfectly, I used the Pillow (PIL) library to resize the frames. This is mathematically sharper than the Bicubic method I used last week.
+
+Progress Tracking: I added tqdm progress bars. This is really helpful because processing video takes time, and now I can see the Frames Per Second (FPS) and estimated time remaining.
+
+Results The code runs smoothly and is much easier to read. The Lanczos output is slightly sharper than the Week 1 Bicubic output, but it still has some "jagged" edges and looks like a digital zoom.
+
+Thoughts The code structure feels solid now. I realized that while Lanczos is better than Bicubic, it still can't create details that aren't there. That confirms I definitely need Deep Learning to get the results I want.
+
+Next Week For Week 3, I am going to finally integrate the Real-ESRGAN deep learning model. This will be the big jump from "math-based" resizing to "AI-based" upscaling.
